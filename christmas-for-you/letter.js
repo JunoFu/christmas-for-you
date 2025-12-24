@@ -7,11 +7,11 @@ function openLetter() {
 function checkPassword() {
     const pwd = document.getElementById("password").value;
 
-    if (pwd === "070521") {  // 你可以改成你们的暗号
+    if (pwd === "panda") {  
         document.getElementById("password-box").classList.add("hidden");
         document.getElementById("letter-content").classList.remove("hidden");
     } else {
-        alert("try again");
+        alert("under the christmas tree");
     }
 }
 
