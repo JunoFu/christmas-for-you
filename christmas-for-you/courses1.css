@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: "Georgia", serif;
+    background-color: #f6f4f1;
+    color: #333;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+/*自动变排版*/
+.courses-container {
+    display: grid;
+    /* 核心修改1：固定最多3列，替代原来的 auto-fit */
+    grid-template-columns: repeat(3, 1fr);
+    /* 核心新增：卡片整体居中 + 限制容器最大宽度（避免大屏过宽） */
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* 保留你原有间距 */
+    gap: 30px;
+    /* 响应式适配：不同屏幕自动调整列数 */
+    /* 平板端（≤992px）：2列 */
+    @media (max-width: 992px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* 手机端（≤576px）：1列 */
+    @media (max-width: 576px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.course-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s;
+    box-sizing: border-box;
+}
+
+.course-card:hover {
+    transform: translateY(0);
+}
+
+.detail {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}

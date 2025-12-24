@@ -1,0 +1,68 @@
+body {
+    background-color:  #0F172A;
+    color:#C7A14A;
+    font-family: Georgia, serif;
+
+    text-align: center;
+    padding: 40px;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 60px;
+}
+
+.tree-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tree {
+    width: 400px;
+}
+
+.envelope {
+    width: 50px;
+    position: absolute;
+    top: 495px;
+    left: 270px;
+    cursor: pointer;
+}
+
+#password-box, #letter-content {
+    margin-top: 40px;
+}
+
+input {
+    padding: 8px;
+    margin: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.hint {
+    font-size: 18px;
+    opacity: 0.8;
+    margin-top: 20px;
+    font-style: italic;
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    to {
+        opacity: 0.8;
+        transform: translateY(0);
+    }
+}

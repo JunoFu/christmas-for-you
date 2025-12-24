@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: "Georgia", "Times New Roman", serif;
+    background-color:
+    #f6f4f1;
+    color: #333;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;                 
+    transition: opacity 2s;     
+}
+
+.title {
+    font-size: 48px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin: 6px 0;
+    opacity: 0.8;
+}
+
+.enter-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 28px;
+
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+
+    background-color: #333;
+    border-radius: 30px;
+
+    transition: all 0.3s;
+}
+
+.enter-button:hover {
+    background-color: #555;
+}
+

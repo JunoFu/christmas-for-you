@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: "Georgia", serif;
+    background-color: #f6f4f1;
+    color: #333;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s;
+}
+
+
+.course-card:hover {
+    transform: translateY(0);
+}
+
+.detail {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}

@@ -1,0 +1,43 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #444;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.button-center-wrapper {
+    text-align: center; 
+}
+
+.enter-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 28px;
+
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+
+    background-color: #333;
+    border-radius: 30px;
+
+    transition: all 0.3s;
+    text-align: center;
+    min-width: 60px;
+
+}
+
+.enter-button:hover {
+    background-color: #555;
+}
+

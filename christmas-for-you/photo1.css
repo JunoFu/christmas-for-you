@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 60px 0;
+   font-family: Georgia, serif;
+  background: #f6f4f1;
+  color: #111;
+}
+
+.city {
+  margin-bottom: 100px;
+}
+
+.city h2 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-left: 8vw;
+}
+
+.desc {
+  margin-left: 8vw;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  color: #666;
+  font-size: 15px;
+}
+
+/* 横向自然滑动 */
+.carousel {
+  display: flex;
+  gap: 24px;
+  padding-left: 8vw;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* 照片样式 */
+.carousel img {
+  height: 360px;
+  width: auto;
+  object-fit: contain;
+  scroll-snap-align: start;
+  border-radius: 12px;
+  background: #f5f5f7;
+  transition: transform 0.4s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.03);
+}
+
+/* 圆点 */
+.dots {
+  display: flex;
+  gap: 8px;
+  margin-left: 8vw;
+  margin-top: 16px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.dot.active {
+  background: #111;
+}
+

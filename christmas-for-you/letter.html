@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Letter</title>
+    
+    <link rel="stylesheet" href="letter.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="courses.html">Courses</a>
+    <a href="photo1.html">Places</a>
+    <a href="thoughts.html">Thoughts</a>
+</nav>
+
+<h1 class="page-title">Merry Christmas</h1>
+
+<div class="tree-container">
+    <img src="image/tree1.png" class="tree">
+
+    <img src="image/envelope1.png" class="envelope" onclick="openLetter()">
+
+    <p id="hint" class="hint hidden">
+        You already know the answer.
+    </p>
+
+</div>
+
+<div id="password-box" class="hidden">
+    <p></p>
+    <input type="password" id="password">
+    <button onclick="checkPassword()">Open</button>
+</div>
+
+<div id="letter-content" class="hidden">
+    <p>
+        Dear ,<br>
+
+I’ve rewritten this page many times,<br>
+because I didn’t know how to explain my silence<br>
+without sounding broken.<br><br>
+
+When university started, I wasn’t doing well —<br>
+not in a dramatic way,<br>
+but in a quiet, confusing way where I didn’t recognize myself anymore.<br>
+
+I was afraid to let you see me like that.<br>
+
+You knew me when I was confident, energetic, and full of plans.<br>
+I was scared that if I showed you who I had become,<br>
+I would disappoint you —<br>
+or worse, lose the version of myself that only existed in your eyes.<br><br>
+
+So I chose silence.<br>
+Not because I forgot you,<br>
+but because I missed you too much.<br><br>
+
+This semester hasn’t been about success.<br>
+It has been about learning how to stay alive gently —<br>
+through books, parks, music, photos, and small moments of peace.<br><br>
+
+I’m still finding my way.<br>
+But I wanted you to know:<br>
+you were never left behind.<br><br>
+
+Thank you for being someone<br>
+who once made my days lighter,<br>
+and who still lives quietly in my memory.<br><br>
+
+I hope this small website can tell you something<br>
+I didn’t know how to say before:<br><br>
+
+I’m here.<br>
+I’m learning.<br>
+And I wish you a warm, kind Christmas.<br><br>
+
+With love,<br>
+[Your Name]
+    </p>
+</div>
+
+<audio id="bgm" loop>
+  <source src="music/bgm.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="toggleMusic()">🎵</button>
+
+<script src="letter.js"></script>
+
+</body>
+</html>
